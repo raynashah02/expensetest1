@@ -5,15 +5,20 @@
 //  Created by Rayna Shah on 2/2/23.
 //
 
-import UIKit
+import SwiftUI
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+struct ContentView: View {
+    var body: some View{
+        NavigationView{
+            Home()
+                .navigationBarHidden(true)
+        }
     }
-
-
 }
 
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+
+    }
+}
